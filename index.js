@@ -60,6 +60,8 @@ module.exports = function(conf) {
       config.rc = config.rc || {};
       config.rc.info = loaded;
 
+      scope.emit('rc:load', rc, runcontrol, req);
+
       if(typeof onload === 'function') {
         return onload.call(scope, req, next, rc, runcontrol);
       }
