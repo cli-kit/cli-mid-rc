@@ -11,7 +11,7 @@ var loaded;
 module.exports = function(conf) {
   var config = this.configure();
   conf = conf || config.rc;
-  if(!conf) return this;
+  if(!conf || (conf && conf.enabled === false)) return this;
 
   var assign = this.assign;
   return function rc(req, next) {
