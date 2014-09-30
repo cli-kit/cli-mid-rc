@@ -25,11 +25,7 @@ module.exports = function(conf) {
       , onload = conf.onload
       , runcontrol;
 
-    try {
-      runcontrol = require('cli-rc');
-    }catch(e) {
-      return next(errors.ERC_MODULE);
-    }
+    runcontrol = require('cli-rc');
 
     if(conf.keys && conf.keys.append) {
       var files = req.result.options[conf.keys.append];
