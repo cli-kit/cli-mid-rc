@@ -24,12 +24,12 @@
     "action"
   ],
   "dependencies": {
-    "cli-rc": "~1.0.11"
+    "cli-rc": "~1.0.12"
   },
   "devDependencies": {
-    "chai": "~1.9.2",
-    "istanbul": "~0.3.2",
-    "mocha": "~1.21.4"
+    "chai": "~3.2.0",
+    "istanbul": "~0.3.17",
+    "mocha": "~2.2.5"
   },
   "engine": [
     "node >= 0.10.21"
